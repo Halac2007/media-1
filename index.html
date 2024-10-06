@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" id="icon-menu">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+        <div id="overlay"></div>
+        <div id="sidebar">
+          <a href="" class="sidebar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" id="icon-menu">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+            <div class="bar-logo"><img src="https://static-cms-plo.epicdn.me/v4/web/styles/img/plo-logo.svg" alt="" /></div>
+          </a>
+          <a href="" class="sidebar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+            <div>Trang chủ</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Video mới</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Video xem nhiều</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Video tin tức</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Nóng hôm nay</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Phóng sự</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+            <div>Thông tin tòa soạn</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            <div>Liên hệ</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>PLO APP</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div class="img-app"><img src="https://static-cms-plo.epicdn.me/v4/web/styles/img/app-androi.png?v2" alt="" /></div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div class="img-app"><img src="https://static-cms-plo.epicdn.me/v4/web/styles/img/app-ios.png?v2" alt="" /></div>
+          </a>
+        </div>
+      </div>
+      <div class="section-header">
+        <div class="main-header">
+          <div class="menu-logo"><img src="https://static-cms-plo.epicdn.me/v4/web/styles/img/plo-logo.svg" alt="" /></div>
+          <div class="header-menu">
+            <a class="menu-link is-active" href="#">Video mới</a>
+            <a class="menu-link notify" href="#">Video xem nhiều</a>
+            <a class="menu-link notify" href="#">Nóng hôm nay</a>
+            <a class="menu-link" href="#">Video tin tức</a>
+            <a class="menu-link" href="#">Phóng sự</a>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm" />
+          </div>
+          <div class="header-profile">
+            <div class="dropdown">
+              <div class="notification">
+                <span class="notification-number">3</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-bell"
+                  width="24"
+                  height="24"
+                >
+                  <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"></path>
+                </svg>
+              </div>
+              <div class="notification-container">
+                <div class="noti-content">
+                  <h3>Video mới nhất</h3>
+                  <div class="list-noti">
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>1</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>2</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>3</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>4</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>5</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img class="profile-img" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="wrap-video">
+        <div class="wp-videoleft">
+          <div class="top-video">
+            <iframe
+              width="100%"
+              height="560"
+              src="https://www.youtube.com/embed/sLOh8wp9Yhc?si=OQxPxmsMGr6PJlCg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="box-info">
+            <h2 class="title">Sẽ xử lý trách nhiệm thủ trưởng đơn vị có cán bộ vi phạm nồng độ cồn</h2>
+            <div class="cate-time">
+              <div class="cate"><a href="chuyen-muc.html">Nóng hôm nay</a></div>
+              <div class="timer">5/10/2024 | 07:01</div>
+            </div>
+            <div class="sapo">
+              Bộ Công an sẽ kiên quyết xem xét, xử lý trách nhiệm đối với thủ trưởng đơn vị khi để cán bộ, công nhân, viên chức vi phạm
+              nồng độ cồn khi tham gia giao thông.Thực hiện chỉ đạo của Thủ tướng Chính phủ, Bộ Công an đã chỉ đạo các đơn vị địa
+              phương trong quá trình tuần tra, kiểm soát vi phạm pháp luật về giao thông phải tuân thủ pháp luật và tự tôn pháp luật,
+              không có vùng cấm, không có ngoại lệ.
+            </div>
+          </div>
+          <section class="auto-play">
+            <div class="check-auto">
+              <strong>Tự động phát</strong>
+              <label class="switch">
+                <input type="checkbox" checked="" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <div class="splide" id="splide01" role="region" aria-roledescription="carousel">
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide">
+                  <!-- SVG for previous arrow -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                  </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide">
+                  <!-- SVG for next arrow -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="splide__track" id="splide01-track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="splide-item">
+                      <div class="splide-thumb">
+                        <img
+                          src="https://image.plo.vn/w2000/Uploaded/2024/xqeioxnsxr/2024_09_26/bien-linh-kien-xe-cu-thanh-do-choi-gia-tram-trieu-dong-1-9444.jpg.webp"
+                          alt="thumb1"
+                        />
+                      </div>
+                      <div class="splide-text">
+                        <div class="title">
+                          Nóng hôm nay: Bất ngờ với cách cựu Phó GĐ Sở Ngoại vụ Thái Nguyên 'ẵm trọn' hơn 7,6 tỉ đồng vụ chuyến bay
+                          giải cứu
+                        </div>
+                        <div class="timer">08/12/2022 | 10:43</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide-item">
+                      <div class="splide-thumb">
+                        <img
+                          src="https://image.plo.vn/w2000/Uploaded/2024/xqeioxnsxr/2024_09_28/img-5901-6922.jpeg.webp"
+                          alt="thumb2"
+                        />
+                      </div>
+                      <div class="splide-text">
+                        <div class="title">Thị trường bất động sản và những bước ngoặt mới</div>
+                        <div class="timer">08/12/2022 | 12:00</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide-item">
+                      <div class="splide-thumb">
+                        <img
+                          src="https://image.plo.vn/w2000/Uploaded/2024/xqeioxnsxr/2024_09_26/bien-linh-kien-xe-cu-thanh-do-choi-gia-tram-trieu-dong-3-6661.jpg.webp"
+                          alt="thumb3"
+                        />
+                      </div>
+                      <div class="splide-text">
+                        <div class="title">Nền kinh tế Việt Nam: Cơ hội và thách thức trong tương lai</div>
+                        <div class="timer">08/12/2022 | 14:15</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide-item">
+                      <div class="splide-thumb">
+                        <img
+                          src="https://image.plo.vn/w2000/Uploaded/2024/xqeioxnsxr/2024_09_26/bien-linh-kien-xe-cu-thanh-do-choi-gia-tram-trieu-dong-2-4630.jpg.webp"
+                          alt="thumb4"
+                        />
+                      </div>
+                      <div class="splide-text">
+                        <div class="title">Tầm nhìn phát triển đô thị trong giai đoạn mới</div>
+                        <div class="timer">08/12/2022 | 16:30</div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Repeat li for other slides -->
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="page-content">
+            <div class="box-share">
+              <strong>Theo dõi kênh Báo Pháp Luật TP.HCM</strong>
+              <a href="https://www.youtube.com/@PLOTV" target="_blank">
+                <span class="text"><i class="gg-bell"></i>Theo dõi</span></a
+              >
+            </div>
+
+            <div class="box-author"></div>
+            <div class="box-description">
+              <h3>Mô tả nội dung:</h3>
+              <div class="sum-des">
+                <p>
+                  Chiều 4-10, tại họp báo thông báo tình hình, kết quả công tác an ninh quý 3-2024 của Bộ Công an, phóng viên đặt câu
+                  hỏi liên quan đến việc xử lý vi phạm nồng độ cồn là cán bộ, công nhân, viên chức.
+                </p>
+                <p>
+                  Riêng trong quý 1-2024, lực lượng công an đã xác định, xử lý vi phạm hành chính và báo về cơ quan đơn vị trên 7.600
+                  đảng viên, cán bộ, công chức, viên chức vi phạm nồng độ cồn.
+                </p>
+                <p>
+                  Thực hiện chỉ đạo của Thủ tướng Chính phủ, Bộ Công an đã chỉ đạo các đơn vị địa phương trong quá trình tuần tra, kiểm
+                  soát vi phạm pháp luật về giao thông phải tuân thủ pháp luật và tự tôn pháp luật, không có vùng cấm, không có ngoại
+                  lệ. Và không có sự can thiệp của cán bộ chiến sĩ trong việc xử lý vi phạm của lực lượng chức năng.
+                </p>
+                <p>
+                  Về việc xem xét trách nhiệm của thủ trưởng đơn vị có cán bộ sai phạm, Bộ Công an cho biết, sẽ kiên quyết xem xét, xử
+                  lý trách nhiệm đối với thủ trưởng, người đứng đầu đơn vị khi để cán bộ, công nhân, viên chức vi phạm nồng độ cồn khi
+                  tham gia giao thông.
+                </p>
+                <p>
+                  Về dự thảo Nghị định xử phạt vi phạm hành chính, Bộ Công an cho biết đã xin ý kiến các bộ, ngành và đang trong quá
+                  trình tổng hợp các ý kiến, tổng hợp hồ sơ để gửi về Bộ Tư pháp thẩm định.
+                </p>
+                <div class="end_author">
+                  <div class="article_top">
+                    <div class="box-social">
+                      <div class="wrap-iframe">
+                        <div
+                          class="fb-like fb_iframe_widget"
+                          data-href="https://plo.vn/post-705737.html"
+                          data-layout="button_count"
+                          data-action="like"
+                          data-size="large"
+                          data-show-faces="false"
+                          data-share="true"
+                          fb-xfbml-state="rendered"
+                          fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fplo.vn%2Fpost-705737.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=false&amp;size=large"
+                        >
+                          <span style="vertical-align: bottom; width: 174px; height: 28px"
+                            ><iframe
+                              name="f32df360a7acdf8"
+                              width="1000px"
+                              height="1000px"
+                              data-testid="fb:like Facebook Social Plugin"
+                              title="fb:like Facebook Social Plugin"
+                              frameborder="0"
+                              allowtransparency="true"
+                              allowfullscreen="true"
+                              scrolling="no"
+                              allow="encrypted-media"
+                              src="https://www.facebook.com/v2.21/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1609ea70cdc088%26domain%3Dplo.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fplo.vn%252Ff56b414ebed48c%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fplo.vn%2Fpost-705737.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=false&amp;size=large"
+                              style="border: none; visibility: visible; width: 174px; height: 28px"
+                              class=""
+                            ></iframe
+                          ></span>
+                        </div>
+                      </div>
+
+                      <div class="social article__social">
+                        <a
+                          href="javascript:void(0);"
+                          class="twitter"
+                          data-href="https://plo.vn/post-705737.html"
+                          rel="twitter"
+                          title="Chia sẻ qua Twitter"
+                        >
+                          twitter
+                        </a>
+                        <a
+                          class="zalo zalo-share-button"
+                          href="javascript:void(0);"
+                          data-href="https://plo.vn/post-705737.html"
+                          data-oaid="783607375436573981"
+                          data-layout="2"
+                          data-color="blue"
+                          data-customize="true"
+                        >
+                          zalo
+                        </a>
+                        <a
+                          href="mailto:email@domain.com"
+                          title="Chia sẻ qua Email"
+                          rel="nofollow noopener"
+                          target="_blank"
+                          class="mail"
+                          >mail</a
+                        >
+                        <a href="javascript:void(0);" class="printer sendprint" data-id="705737">printer</a>
+                        <a
+                          href="javascript:void(0);"
+                          class="bookmark sendbookmark"
+                          onclick="ME.sendBookmark(this,711870);"
+                          data-id="711870"
+                          title="Lưu bài viết"
+                          ><i class="fa fa-bookmark"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="name-text"><strong>Tác giả:</strong>MINH TRÚC</p>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-detail-cate">
+              <div class="podcast-tag">
+                <div class="article__tag">
+                  <div class="box-heading">
+                    <h3 class="wrap-heading">
+                      <span class="heading">Tag:</span>
+                    </h3>
+                  </div>
+                  <div class="box-content">
+                    <a href="">Vi phạm nồng độ cồn</a>
+                    <a href="">Bộ công an</a>
+                    <a href="">Nồng độ cồn</a>
+                    <a href="">Xử phạt nồng độ cồn</a>
+                  </div>
+                </div>
+              </div>
+              <div class="podcast-comment">
+                <div id="article-comment" class="box-comment article-comment" data-id="705860" data-type="20">
+                  <div id="comment-705860" class="box-comment">
+                    <div class="box-heading">
+                      <h3 class="wrap-heading"><a href="#">Bình luận</a></h3>
+                    </div>
+                    <div class="box-content">
+                      <div class="input wrap-comment">
+                        <textarea
+                          rows="3"
+                          placeholder="Ý kiến của bạn sẽ được biên tập trước khi đăng. Xin vui lòng gõ tiếng Việt có dấu"
+                        ></textarea>
+                        <div class="w-100 mt-3 d-flex justify-content-between">
+                          <div class="wrap-login" id="login-comment">
+                            <span>Đăng nhập bằng :</span>
+                            <button class="fb login-fb" rel="facebook"><i class="gg-facebook"></i></button>
+                            <button class="google login-gg" rel="google"><i class="gg-google"></i></button>
+                            <button class="zalo login-zl" rel="zalo"></button>
+                            <button class="mail" id="login-cms"><i class="gg-mail"></i></button> <span>hoặc</span>
+                            <a href="javascript:void(0);" class="register-link" id="signup-cms">Đăng ký</a>
+                          </div>
+                          <button class="btn-Submit btnSubmit">Gửi bình luận</button>
+                        </div>
+                      </div>
+                      <div class="filter-comment" style="display: none">
+                        <div class="total-comment" id="total-comment">0 bình luận</div>
+                        <div class="wrap-select">
+                          <label>sắp xếp theo:</label>
+                          <select id="ddlOrder">
+                            <option value="0">Mới nhất</option>
+                            <option value="1">Hay nhất</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="user"></div>
+                      <button data-page="1" style="display: none" class="btn btn-link btn-lg mt-3 btnMore">XEM THÊM BÌNH LUẬN</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="wp-videoright">
+          <div class="list-video">
+            <div class="tabs-container">
+              <!-- Nút Prev nằm trước các tab -->
+              <button class="prev" id="prevBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" transform="scale(-1, 1)">
+                  <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"></path>
+                </svg>
+              </button>
+              <div class="tabs-wrapper">
+                <div class="tabs">
+                  <button class="tab active" data-tab="all">Tất cả</button>
+                  <button class="tab" data-tab="video-tin-tuc">Video tin tức</button>
+                  <button class="tab" data-tab="nong-hom-nay">Nóng hôm nay</button>
+                  <button class="tab" data-tab="video-phong-su">Video phóng sự</button>
+                  <button class="tab" data-tab="video-dieu-tra">Video điều tra</button>
+                  <button class="tab" data-tab="video-doc-quyen">Video độc quyền</button>
+                  <button class="tab" data-tab="video-xem-nhieu">Video xem nhiều</button>
+                  <button class="tab" data-tab="video-moi-nhat">Video mới nhất</button>
+                </div>
+              </div>
+              <!-- Nút Next nằm sau các tab -->
+              <button class="next" id="nextBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="videos" data-content="all">
+              <!-- Videos cho Tất cả -->
+              <div class="video">
+                <a
+                  href="https://plo.vn/du-bao-thoi-tiet-ngay-5-10-bac-bo-nang-hanh-tay-nguyen-va-nam-bo-co-mua-rai-rac-post813414.html"
+                >
+                  <img
+                    src="https://image.plo.vn/220x145/Uploaded/2024/sltif/2024_10_05/du-bao-thoi-tiet-5-10-1714.jpg.webp"
+                    alt="Dự báo thời tiết ngày 5-10"
+                  />
+                </a>
+                <div class="video-info">
+                  <h4>
+                    <a
+                      href="https://plo.vn/du-bao-thoi-tiet-ngay-5-10-bac-bo-nang-hanh-tay-nguyen-va-nam-bo-co-mua-rai-rac-post813414.html"
+                      >Dự báo thời tiết ngày 5-10: Bắc Bộ nắng hanh, Tây Nguyên và Nam Bộ có mưa rải rác
+                    </a>
+                  </h4>
+                  <p>
+                    <span><a href="https://plo.vn/video-tin-tuc/">Video tin tức</a></span> <span>700 lượt xem</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="video">
+                <a href="https://plo.vn/bi-giat-day-chuyen-nguoi-phu-nu-be-con-nho-nga-nhao-xuong-duong-post813473.html">
+                  <img
+                    src="https://image.plo.vn/Uploaded/2024/xqeioxdsox/2024_10_05/giat-day-chuyen-7597.gif"
+                    alt="Bị giật dây chuyền"
+                  />
+                </a>
+                <div class="video-info">
+                  <h4>
+                    <a href="https://plo.vn/bi-giat-day-chuyen-nguoi-phu-nu-be-con-nho-nga-nhao-xuong-duong-post813473.html"
+                      >Bị giật dây chuyền, người phụ nữ bế con nhỏ ngã nhào xuống đường
+                    </a>
+                  </h4>
+                  <p>
+                    <span><a href="https://plo.vn/video-tin-tuc/">Video tin tức</a></span> <span>1.200 lượt xem</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="videos" data-content="video-tin-tuc" style="display: none">
+              <!-- Videos cho "Của Diệu Nhiên Lofi" -->
+              <div class="video">
+                <a href="https://plo.vn/video/xuc-dong-nghia-tinh-com-treo-bun-treo-o-sai-gon-post812714.html"
+                  ><img
+                    src="https://image.plo.vn/220x145/Uploaded/2024/zgtrai/2024_10_02/mo-hinh-chia-se-yeu-thuong-754.jpg.webp"
+                    alt="Lofi Video"
+                /></a>
+                <div class="video-info">
+                  <h4>
+                    <a href="https://plo.vn/video/xuc-dong-nghia-tinh-com-treo-bun-treo-o-sai-gon-post812714.html"
+                      >Xúc động nghĩa tình ‘cơm treo, bún treo” ở Sài Gòn
+                    </a>
+                  </h4>
+                  <p><span>Video tin tức</span> <span>300 lượt xem</span></p>
+                </div>
+              </div>
+              <div class="video">
+                <a href="https://plo.vn/video/xuc-dong-nghia-tinh-com-treo-bun-treo-o-sai-gon-post812714.html"
+                  ><img
+                    src="https://image.plo.vn/220x145/Uploaded/2024/drkxraekxq/2024_10_04/an-ninh-trat-tu00-15-45-07still006-9626.jpg.webp"
+                    alt="Lofi Video"
+                /></a>
+                <div class="video-info">
+                  <h4>
+                    <a href="https://plo.vn/video/xuc-dong-nghia-tinh-com-treo-bun-treo-o-sai-gon-post812714.html"
+                      >Điểm tin ANTT: Vì sao Phó Chủ tịch huyện Hưng Hà, Thái Bình bị bắt?; Kịch tính giải cứu bé 5 tuổi
+                    </a>
+                  </h4>
+                  <p><span>Video tin tức</span> <span>300 lượt xem</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="videos" data-content="nong-hom-nay" style="display: none">
+              <!-- Videos cho "Của Diệu Nhiên Lofi" -->
+              <div class="video">
+                <a href="https://plo.vn/nong-hom-nay-nhin-lai-vu-an-truong-my-lan-giai-doan-2-sau-mot-tuan-xet-xu-post812513.html"
+                  ><img src="https://image.plo.vn/220x145/Uploaded/2024/wauiba/2024_09_29/nong-hom-nay-1745.jpg.webp" alt="Lofi Video"
+                /></a>
+                <div class="video-info">
+                  <h4>
+                    <a href="https://plo.vn/nong-hom-nay-nhin-lai-vu-an-truong-my-lan-giai-doan-2-sau-mot-tuan-xet-xu-post812513.html"
+                      >Nóng hôm nay: Nhìn lại vụ án Trương Mỹ Lan giai đoạn 2 sau một tuần xét xử</a
+                    >
+                  </h4>
+                  <p><span>Nóng hôm nay</span> <span>1500 lượt xem</span></p>
+                </div>
+              </div>
+              <div class="video">
+                <a
+                  href="https://plo.vn/video/nong-hom-nay-tong-bi-thu-chu-tich-nuoc-to-lam-tham-cap-nha-nuoc-mong-co-bao-krathon-anh-huong-den-bien-dong-post812673.html#812673|media-zone-timeline-281|4"
+                  ><img
+                    src="https://image.plo.vn/220x145/Uploaded/2024/zgtrai/2024_09_30/thumb-bao-plo-1-6605.jpg.webp"
+                    alt="Lofi Video"
+                /></a>
+                <div class="video-info">
+                  <h4>
+                    <a
+                      href="https://plo.vn/video/nong-hom-nay-tong-bi-thu-chu-tich-nuoc-to-lam-tham-cap-nha-nuoc-mong-co-bao-krathon-anh-huong-den-bien-dong-post812673.html#812673|media-zone-timeline-281|4"
+                      >Nóng hôm nay: Tổng bí thư, Chủ tịch nước Tô Lâm thăm cấp Nhà nước Mông Cổ; Bão Krathon ảnh hưởng đến biển Đông
+                    </a>
+                  </h4>
+                  <p><span>Nóng hôm nay</span> <span>1500 lượt xem</span></p>
+                </div>
+              </div>
+              <div class="video">
+                <a
+                  href="https://plo.vn/nong-hom-nay-bat-ngo-voi-cach-cuu-pho-gd-so-ngoai-vu-thai-nguyen-am-tron-hon-76-ti-dong-vu-chuyen-bay-giai-cuu-post813211.html"
+                  ><img src="https://image.plo.vn/220x145/Uploaded/2024/wauiba/2024_10_03/nong-hom-nay-6171.jpg.webp" alt="Lofi Video"
+                /></a>
+                <div class="video-info">
+                  <h4>
+                    <a
+                      href="https://plo.vn/nong-hom-nay-bat-ngo-voi-cach-cuu-pho-gd-so-ngoai-vu-thai-nguyen-am-tron-hon-76-ti-dong-vu-chuyen-bay-giai-cuu-post813211.html"
+                      >Nóng hôm nay: Bất ngờ với cách cựu Phó GĐ Sở Ngoại vụ Thái Nguyên 'ẵm trọn' hơn 7,6 tỉ đồng vụ chuyến bay giải
+                      cứu
+                    </a>
+                  </h4>
+                  <p><span>Nóng hôm nay</span> <span>1500 lượt xem</span></p>
+                </div>
+              </div>
+              <div class="video">
+                <a
+                  href="https://plo.vn/nong-hom-nay-bat-ngo-voi-cach-cuu-pho-gd-so-ngoai-vu-thai-nguyen-am-tron-hon-76-ti-dong-vu-chuyen-bay-giai-cuu-post813211.html"
+                  ><img src="https://image.plo.vn/220x145/Uploaded/2024/wauiba/2024_10_01/nong-hom-nay-4426.jpg.webp" alt="Lofi Video"
+                /></a>
+                <div class="video-info">
+                  <h4>
+                    <a
+                      href="https://plo.vn/nong-hom-nay-bat-ngo-voi-cach-cuu-pho-gd-so-ngoai-vu-thai-nguyen-am-tron-hon-76-ti-dong-vu-chuyen-bay-giai-cuu-post813211.html"
+                      >Nóng hôm nay: Xử lý sao vụ cô giáo xin tiền hỗ trợ mua máy tính cá nhân?; Giá vé tàu tết 2025 có thể giảm tới
+                      50%
+                    </a>
+                  </h4>
+                  <p><span>Nóng hôm nay</span> <span>1500 lượt xem</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="videos" data-content="video-phong-su" style="display: none">
+              <!-- Videos cho "Của Diệu Nhiên Lofi" -->
+              <div class="video">
+                <a href="https://plo.vn/video/xuc-dong-nghia-tinh-com-treo-bun-treo-o-sai-gon-post812714.html"
+                  ><img
+                    src="https://image.plo.vn/220x145/Uploaded/2024/zgtrai/2024_10_02/mo-hinh-chia-se-yeu-thuong-754.jpg.webp"
+                    alt="Lofi Video"
+                /></a>
+                <div class="video-info">
+                  <h4>
+                    <a href="https://plo.vn/video/xuc-dong-nghia-tinh-com-treo-bun-treo-o-sai-gon-post812714.html"
+                      >Xúc động nghĩa tình ‘cơm treo, bún treo” ở Sài Gòn
+                    </a>
+                  </h4>
+                  <p><span>Video tin tức</span> <span>300 lượt xem</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="videos" data-content="video-dieu-tra" style="display: none">
+              <!-- Videos cho "Của Diệu Nhiên Lofi" -->
+              <div class="video">
+                <a href="https://plo.vn/clip-dieu-tra-ky-2-lat-tay-tro-pha-xe-cua-chu-tiem-o-thu-duc-binh-phuoc-post805838.html"
+                  ><img
+                    src="https://image.plo.vn/270x180/Uploaded/2024/wpdhnwhnw/2024_08_18/lat-tay-tro-pha-hoai-cua-chu-tiem-sua-xe-o-thu-duc-binh-phuoc-3811.jpg.webp"
+                    alt="Lofi Video"
+                /></a>
+                <div class="video-info">
+                  <h4>
+                    <a href="https://plo.vn/clip-dieu-tra-ky-2-lat-tay-tro-pha-xe-cua-chu-tiem-o-thu-duc-binh-phuoc-post805838.html"
+                      >(PLO)- Ở TP Thủ Đức và tỉnh Bình Phước, các trò phá hoại của chủ tiệm sửa xe như ảo thuật, biến xe khách hàng
+                      thành xe hư hỏng rồi ép sửa chữa với giá cao.
+                    </a>
+                  </h4>
+                  <p><span>Video điều tra</span> <span>50.000 lượt xem</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="videos" data-content="video-doc-quyen" style="display: none">
+              <!-- Videos cho "Video có liên quan" -->
+              <div class="video">
+                <a href="https://plo.vn/clip-dieu-tra-ky-3-ve-benh-pha-xe-tren-quoc-lo-1-quoc-lo-51-post805839.html"
+                  ><img
+                    src="https://image.plo.vn/270x180/Uploaded/2024/wpdhnwhnw/2024_08_18/clip-dieu-tra-ky-3-kinh-hoang-nan-ve-benh-pha-xe-tren-quoc-lo-1-quoc-lo-51-2795.jpg.webp"
+                    alt="Related Video"
+                /></a>
+                <div class="video-info">
+                  <h4>CLIP ĐIỀU TRA - Kỳ 3: Vẽ bệnh, phá xe trên Quốc lộ 1, Quốc lộ 51</h4>
+                  <p><span>Video độc quyền</span> <span>50.000 lượt xem</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="videos" data-content="video-xem-nhieu" style="display: none">
+              <!-- Videos cho "Video có liên quan" -->
+              <div class="video">
+                <a
+                  href="https://plo.vn/clip-dieu-tra-ky-5-cam-gay-sat-truy-duoi-de-doa-khi-bi-vach-tran-chuyen-pha-xe-tren-quoc-lo-post805842.html"
+                >
+                  <img
+                    src="https://image.plo.vn/Uploaded/2024/wpdhnwhnw/2024_08_23/bai-cuoi-cum-4-tiem-pha-xe-quoc-lo-51-la-ho-hang-voi-nhau-3634.gif"
+                    alt="Related Video"
+                  />
+                </a>
+                <div class="video-info">
+                  <h4>CLIP ĐIỀU TRA - Kỳ 5: Cầm gậy sắt truy đuổi, đe dọa khi bị vạch trần chuyện phá xe trên quốc lộ</h4>
+                  <p><span>Video liên quan</span> <span>50.000 lượt xem</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="videos" data-content="video-moi-nhat" style="display: none">
+              <!-- Videos cho "Video có liên quan" -->
+              <div class="video">
+                <a href="">
+                  <img src="https://image.plo.vn/Uploaded/2024/xqeioxdsox/2024_10_05/giat-day-chuyen-7597.gif" alt="Related Video" />
+                </a>
+                <div class="video-info">
+                  <h4>Bị giật dây chuyền, người phụ nữ bế con nhỏ ngã nhào xuống đường</h4>
+                  <p><span>Video mới nhất</span> <span>500 lượt xem</span></p>
+                </div>
+              </div>
+              <div class="video">
+                <img
+                  src="https://image.plo.vn/220x145/Uploaded/2024/wauiba/2023_10_12/cho-nhan-tang-nd1310-2700.jpg.webp"
+                  alt="Related Video"
+                />
+                <div class="video-info">
+                  <h4>Phải thay đổi quan điểm về cho, nhận tạng</h4>
+                  <p><span>Video mới nhất</span> <span>500 lượt xem</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-info">
+        <div class="rank-1">
+          <div class="wrap-logo">
+            <a href="https://plo.vn" class="logo-1" title="PLO - Báo Pháp Luật TP.HCM"></a>
+            <a
+              href="https://tinnhiemmang.vn/danh-ba-tin-nhiem/plovn-1625727762"
+              class="logo-2"
+              title="Chung nhan Tin Nhiem Mang"
+              target="_blank"
+            ></a>
+          </div>
+          <div class="wrap-text">
+            <p>© Báo điện tử Pháp Luật thành phố Hồ Chí Minh</p>
+            <p>Giấy phép số: 636/GP-BTTTT của Bộ Thông tin và Truyền thông cấp ngày 28-12-2020</p>
+            <p>Cơ quan chủ quản: Ủy ban Nhân dân Thành phố Hồ Chí Minh</p>
+            <p>Tổng biên tập: Mai Ngọc Phước</p>
+            <p>Website: <a href="https://plo.vn" class="plo-link">https://plo.vn</a></p>
+            <p>Pháp Luật TP.HCM giữ bản quyền nội dung trên Website này.</p>
+            <p>Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản.</p>
+          </div>
+        </div>
+        <div class="rank-2">
+          <ul>
+            <li><a href="//datbao.plo.vn/" target="_blank" title="Đặt báo">Đặt báo</a></li>
+            <li><a href="//quangcao.plo.vn/" target="_blank" title="Quảng cáo">Quảng cáo</a></li>
+            <li><a href="https://plo.vn/gop-y.html" title="Bạn đọc góp ý">Bạn đọc góp ý</a></li>
+            <li><a href="https://plo.vn/toa-soan.html" title="Thông tin tòa soạn">Thông tin tòa soạn</a></li>
+            <li><a href="https://plo.vn/e-paper/" target="_blank" rel="nofollow" title="E-Paper">E-Paper</a></li>
+          </ul>
+          <p>Phát hành: (028) 3811 2421</p>
+          <p>Tổng đài: (028)3991 0101 - 3991 4701</p>
+          <p>Tiếp bạn đọc: 0982 000 333 - (028) 39 91 96 13 - Email: <span>bandoc@phapluattp.vn</span></p>
+          <p>Liên hệ TT&amp;QC: (028) 39914669 – Fax: (028) 39914606</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <script></script>
+  </body>
+</html>
