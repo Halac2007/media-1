@@ -1220,8 +1220,8 @@ ul {
   .end_author {
     display: contents;
   }
-  .box-description .sum-des p {
-    text-align: center;
+  .end_author .name-text {
+    text-align: center !important;
   }
   .box-comment .btn-Submit,
   .box-comment .btnSubmit {
@@ -1233,6 +1233,14 @@ ul {
   .box-comment .wrap-login span {
     font-size: 11px;
   }
+  .box-share {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-comment textarea {
+    font-size: 13px;
+  }
+
   /* CSS cho điện thoại nhỏ */
 }
 
