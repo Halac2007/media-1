@@ -100,7 +100,7 @@ function showVideos(tab) {
 function updateButtonStyles() {
   // Nếu không còn tab để hiển thị
   if (currentTabIndex + tabsToShow >= tabs.length) {
-    nextBtn.style.backgroundColor = '#ee3537' // Đổi màu nền nút Next
+    nextBtn.style.backgroundColor = '#bcb8b8' // Đổi màu nền nút Next
     nextBtn.disabled = true // Vô hiệu hóa nút Next
   } else {
     nextBtn.style.backgroundColor = '' // Trở về màu nền mặc định
@@ -108,7 +108,7 @@ function updateButtonStyles() {
   }
 
   if (currentTabIndex === 0) {
-    prevBtn.style.backgroundColor = '#ee3537' // Đổi màu nền nút Prev
+    prevBtn.style.backgroundColor = '#bcb8b8' // Đổi màu nền nút Prev
     prevBtn.disabled = true // Vô hiệu hóa nút Prev
   } else {
     prevBtn.style.backgroundColor = '' // Trở về màu nền mặc định

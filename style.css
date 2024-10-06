@@ -929,11 +929,12 @@ textarea {
 .next {
   cursor: pointer;
   margin: 0 10px; /* Khoảng cách giữa các nút */
+  border: 1px solid #bcb8b8;
 }
 
 .prev:hover,
 .next:hover {
-  background-color: #ddd;
+  background-color: #c7c6c6;
 }
 
 .tabs {
@@ -1106,9 +1107,7 @@ ul {
   .menu-logo {
     display: none;
   }
-  iframe {
-    height: 360px;
-  }
+
   .video img {
     width: 140px;
   }
@@ -1128,7 +1127,11 @@ ul {
     padding-top: 10px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 100%;
+    height: 360px;
+  }
   .main-header {
     padding: 0px;
   }
@@ -1155,13 +1158,13 @@ ul {
     width: 250px;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 426px) {
   .notification-container {
     width: 310px;
     right: 0rem;
   }
   iframe {
-    width: 360px;
+    width: 100%;
     height: 180px;
   }
   .box-info .title {
@@ -1182,6 +1185,18 @@ ul {
   .video img {
     width: 120px;
   }
+
+  .video-info h4 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .site-footer .footer-info {
     display: flex;
     flex-direction: column;
@@ -1199,56 +1214,37 @@ ul {
   .site-footer {
     padding-top: 0px;
   }
+  .header-profile {
+    padding: 2px;
+  }
+  .end_author {
+    display: contents;
+  }
+  .box-description .sum-des p {
+    text-align: center;
+  }
+  .box-comment .btn-Submit,
+  .box-comment .btnSubmit {
+    margin-top: 10px;
+  }
+  .box-comment .wrap-login .register-link {
+    font-size: 11px;
+  }
+  .box-comment .wrap-login span {
+    font-size: 11px;
+  }
   /* CSS cho điện thoại nhỏ */
 }
 
-@media (min-width: 321px) and (max-width: 376px) {
+@media screen and (max-width: 320px) {
   iframe {
-    width: 320px;
-  }
-  .box-share {
-    flex-direction: column;
-  }
-  .video {
-    flex-direction: column;
-    align-items: normal;
-  }
-  .video img {
     width: 100%;
-    height: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  .video-info h4 {
-    padding-top: 10px;
   }
   .header-profile {
-    padding: 0px 2px;
-  }
-}
-
-@media (max-width: 320px) {
-  iframe {
-    width: 280px;
-  }
-  .header-profile {
-    padding: 0px;
+    padding: 1px;
   }
   .box-share {
     display: flex;
     flex-direction: column;
-  }
-  .video {
-    flex-direction: column;
-    align-items: normal;
-  }
-  .video img {
-    width: 100%;
-    height: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  .video-info h4 {
-    padding-top: 10px;
   }
 }
